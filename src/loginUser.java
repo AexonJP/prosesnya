@@ -19,6 +19,7 @@ public class loginUser extends akun{
         FormLogin.setSize(300,390);
         // FormLogin.setMinimumSize(500,400);
         FormLogin.setLocation(x,y);
+        FormLogin.setResizable(false);
         FormLogin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         // FormLogin.setDefaultLookAndFeelDecorated(true);
         FormLogin.setLayout(null);
@@ -47,7 +48,7 @@ public class loginUser extends akun{
         setOpaque(false);
         setBorder(new RoundedCornerBorder());
       }
-    };;
+    };
         tbUser.setBounds(50, 65, 200, 20);
         FormLogin.add(tbUser);
 
@@ -105,7 +106,8 @@ public class loginUser extends akun{
                public void actionPerformed(ActionEvent e) {
                   //your actions
                     if (tbUser.getText().equals(user) && tbPass.getText().equals(pass)){
-                        infoBox("alhamdulillah bener", "Login");
+                        new menuUser();
+                        FormLogin.dispose();
 
 
                     }
@@ -114,7 +116,6 @@ public class loginUser extends akun{
 
                         // FormLogin.add((new anime()).lihatAnime());
                     }
-                    // infoBox("kena password anjay", "anjay");
                }
 
           });

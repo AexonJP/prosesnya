@@ -8,6 +8,7 @@ public class menuAdmin{
 		formAdmin.setSize(600,700);
 		formAdmin.setLocation(150,150);
 		formAdmin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        formAdmin.setLocationRelativeTo(null);
 		formAdmin.setLayout(null);
 
 		JButton anime = new JButton("Anime");

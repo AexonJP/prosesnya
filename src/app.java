@@ -4,13 +4,13 @@ import java.util.concurrent.TimeUnit;
 
 
 public class app{
-     void sleep(Integer lama){
-          try {
-               Thread.currentThread().sleep(lama);
-          } catch (InterruptedException e) {
-               e.printStackTrace();
-          }
-     }
+//      void sleep(Integer lama){
+//           try {
+//                Thread.currentThread().sleep(lama);
+//           } catch (InterruptedException e) {
+//                e.printStackTrace();
+//           }
+//      }
 
      public void infoBox(String infoMessage, String titleBar)
      {
