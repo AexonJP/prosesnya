@@ -18,6 +18,7 @@ public class loginAdmin extends akun{
 
         JFrame FormLogin= new JFrame("di admin");
         FormLogin.setSize(300,390);
+        FormLogin.setResizable(false);
         // FormLogin.setMinimumSize(500,400);
         FormLogin.setLocation(x,y);
         FormLogin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -79,7 +80,7 @@ public class loginAdmin extends akun{
         tbPass.setBounds(50, 145, 200, 20);
         FormLogin.add(tbPass);
 
-        JButton cek= new JButton("tambah");
+        JButton cek= new JButton("Login");
         cek.setBounds(95, 240, 100, 30);
         //add button to the frame
         FormLogin.add(cek);

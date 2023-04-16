@@ -1,11 +1,6 @@
 import javax.swing.*;
-// import java.awt.event.*;
-// import java.awt.*;
 import java.awt.event.*;
 import java.awt.*;
-// import java.util.concurrent.TimeUnit;
-// import javax.swing.JOptionPane;
-
 public class loginUser extends akun{
 
     void infoBox(String infoMessage, String titleBar)
@@ -79,7 +74,7 @@ public class loginUser extends akun{
         tbPass.setBounds(50, 145, 200, 20);
         FormLogin.add(tbPass);
 
-        JButton cek= new JButton("tambah");
+        JButton cek= new JButton("Login");
         cek.setBounds(95, 220, 100, 30);
         //add button to the frame
         FormLogin.add(cek);
@@ -108,13 +103,9 @@ public class loginUser extends akun{
                     if (tbUser.getText().equals(user) && tbPass.getText().equals(pass)){
                         new menuUser();
                         FormLogin.dispose();
-
-
                     }
                     else{
                         infoBox("Username atau Password salah", "Login");
-
-                        // FormLogin.add((new anime()).lihatAnime());
                     }
                }
 
